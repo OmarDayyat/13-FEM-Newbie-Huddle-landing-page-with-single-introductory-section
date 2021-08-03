@@ -11,8 +11,8 @@
 }
 
 html {
-  height: 100vh;
   background-image: url("../images/bg-desktop.svg");
+  background-size: cover;
   background-color: #674baf;
   color: white;
 }
@@ -35,7 +35,8 @@ p {
 }
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  padding: 50px 50px;
 }
 
 /*===============
@@ -58,6 +59,10 @@ header {
 /*===============
   Left Column
 =================*/
+.right-col {
+  margin-bottom: 40px;
+}
+
 .right-col a {
   text-decoration: none;
   background-color: white;
@@ -80,6 +85,67 @@ footer {
   height: 80px;
 }
 
+.social-media {
+  position: absolute;
+  right: 5%;
+}
+
+/*===============
+  Icons
+=================*/
+.icon {
+  margin: 0 5px;
+}
+
+.facebook-icon {
+  width: 40px;
+  height: 40px;
+  color: #674baf;
+  background-color: white;
+  border: 3px solid #674baf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.facebook-icon:hover {
+  color: #674baf;
+  background-color: #e882e8;
+}
+
+.twitter-icon {
+  width: 27px;
+  height: 27px;
+  color: white;
+  background-color: #674baf;
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.twitter-icon:hover {
+  color: #e882e8;
+  background-color: #674baf;
+  border-color: #e882e8;
+}
+
+.instagram-icon {
+  width: 27px;
+  height: 27px;
+  color: white;
+  background-color: #674baf;
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.instagram-icon:hover {
+  color: #e882e8;
+  background-color: #674baf;
+  border-color: #e882e8;
+}
+
 /*===============
   Attribution
 =================*/
@@ -88,12 +154,25 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  margin-bottom: 0in;
+  margin-bottom: 10px;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

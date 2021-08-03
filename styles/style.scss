@@ -11,8 +11,8 @@
 }
 
 html{
-  height: 100vh;
   background-image: url("../images/bg-desktop.svg");
+  background-size: cover;
   background-color: $Violet;
   color: white;
 }
@@ -35,7 +35,8 @@ p{
 }
 
 header{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  padding: 50px 50px;
 }
 
 /*===============
@@ -60,6 +61,7 @@ header{
 =================*/
 
 .right-col{
+  margin-bottom: 40px;
   a{
     text-decoration: none;
     background-color: white;
@@ -84,6 +86,65 @@ footer{
   height: 80px;
 }
 
+.social-media{
+  position: absolute;
+  right: 5%;
+}
+
+/*===============
+  Icons
+=================*/
+
+.icon{
+  margin: 0 5px;
+}
+
+.facebook-icon{
+  width: 40px;
+  height: 40px;
+  color: $Violet;
+  background-color: white;
+  border: 3px solid $Violet;
+  border-radius: 50%;  
+  cursor: pointer;
+  &:hover{
+    color: $Violet;
+    background-color: $Soft-Magenta;
+  }
+}
+
+.twitter-icon{
+  width: 27px;
+  height: 27px;
+  color: white;
+  background-color: $Violet;
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 50%;  
+  cursor: pointer;
+  &:hover{
+    color: $Soft-Magenta;
+    background-color: $Violet;
+    border-color: $Soft-Magenta;
+  }
+}
+
+.instagram-icon{
+  width: 27px;
+  height: 27px;
+  color: white;
+  background-color: $Violet;
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 50%;  
+  cursor: pointer;
+  &:hover{
+    color: $Soft-Magenta;
+    background-color: $Violet;
+    border-color: $Soft-Magenta;
+  }
+}
+
 /*===============
   Attribution
 =================*/
@@ -93,10 +154,21 @@ footer{
   bottom: 0;
   right: 0;
   left: 0;
-  margin-bottom: 0in;
+  margin-bottom: 10px;
   font-size: 11px;
   text-align: center;
    a {
       color: hsl(228, 45%, 44%);
      }
+}
+
+@media only screen and (max-width:1024px){
+
+  .main-container{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 50px;
+  }
+  
+
 }
