@@ -10,10 +10,85 @@
   margin: 0;
 }
 
+html {
+  height: 100vh;
+  background-image: url("../images/bg-desktop.svg");
+  background-color: #674baf;
+  color: white;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+/*===============
+  Main Container
+=================*/
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50px;
+}
+
+/*===============
+  Left Column
+=================*/
+.left-col {
+  margin-right: 40px;
+}
+
+/*===============
+  Left Column
+=================*/
+.right-col a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 40px;
+  padding: 15px 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.right-col a:hover {
+  color: white;
+  background-color: #e882e8;
+}
+
+/*===============
+  Footer
+=================*/
+footer {
+  position: relative;
+  height: 80px;
+}
+
 /*===============
   Attribution
 =================*/
 .attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 0in;
   font-size: 11px;
   text-align: center;
 }
