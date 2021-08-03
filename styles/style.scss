@@ -74,7 +74,6 @@ header{
       background-color: $Soft-Magenta;
     }
   }
-
 }
 
 /*===============
@@ -158,17 +157,108 @@ footer{
   font-size: 11px;
   text-align: center;
    a {
-      color: hsl(228, 45%, 44%);
+      color: black;
      }
 }
 
+/*========================================================
+                              Media
+==========================================================*/
+
 @media only screen and (max-width:1024px){
 
-  .main-container{
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0 50px;
+  html{
+    background-image: url("../images/bg-mobile.svg");
   }
   
-
+  h1{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  p{
+    text-align: center;
+  }
+  
+  header{
+    img{
+      width: 175px;
+    }
+  }
+  
+  /*===============
+    Main Container
+  =================*/
+  
+  .main-container{
+    padding: 0 30px;
+    flex-direction: column;
+  }
+  
+  /*===============
+    Left Column
+  =================*/
+  
+  .left-col{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 75vw;
+    }
+  }
+  
+  /*===============
+    Right Column
+  =================*/
+  
+  .right-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    a{
+      padding: 15px 80px;
+    }
+  }
+  
+  /*===============
+    Footer
+  =================*/
+  
+  footer{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media{
+    position: relative;
+    right: 0;
+  }
+  
+  /*===============
+    Icons
+  =================*/
+  
+  .icon{
+    margin: 0 5px;
+  }
+  
+  .facebook-icon{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .twitter-icon{
+    width: 19px;
+    height: 19px;
+  }
+  
+  .instagram-icon{
+    width: 19px;
+    height: 19px;
+  }
 }

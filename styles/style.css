@@ -160,19 +160,107 @@ footer {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: black;
 }
 
+/*========================================================
+                              Media
+==========================================================*/
 @media only screen and (max-width: 1024px) {
+  html {
+    background-image: url("../images/bg-mobile.svg");
+  }
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  header img {
+    width: 175px;
+  }
+  /*===============
+    Main Container
+  =================*/
   .main-container {
+    padding: 0 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*===============
+    Left Column
+  =================*/
+  .left-col {
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left-col img {
+    width: 75vw;
+  }
+  /*===============
+    Right Column
+  =================*/
+  .right-col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding: 0 50px;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 80px;
+  }
+  .right-col a {
+    padding: 15px 80px;
+  }
+  /*===============
+    Footer
+  =================*/
+  footer {
+    position: relative;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-media {
+    position: relative;
+    right: 0;
+  }
+  /*===============
+    Icons
+  =================*/
+  .icon {
+    margin: 0 5px;
+  }
+  .facebook-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .twitter-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .instagram-icon {
+    width: 19px;
+    height: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */
